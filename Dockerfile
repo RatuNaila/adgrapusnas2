@@ -16,8 +16,8 @@ RUN apt-get update && apt-get install -y \
 # Install PHP extensions
 RUN docker-php-ext-install pdo pdo_pgsql pgsql mbstring exif pcntl bcmath gd
 
-# Fix MPM conflict
-RUN a2dismod mpm_event mpm_worker mpm_prefork 2>/dev/null; a2enmod mpm_prefork && a2enmod rewrite
+# Fix MPM
+RUN a2dismod mpm_event && a2enmod mpm_prefork rewrite
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
