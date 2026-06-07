@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 RUN docker-php-ext-install pdo pdo_pgsql pgsql mbstring exif pcntl bcmath gd
 
 # Enable Apache mod_rewrite
-RUN a2enmod rewrite
+RUN a2dismod mpm_event mpm_worker && a2enmod mpm_prefork rewrite
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
