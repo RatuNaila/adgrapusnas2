@@ -14,7 +14,7 @@
         <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 w-full max-w-6xl mx-4 gap-8 items-center">
             {{-- Left Text --}}
             <div class="hidden md:block text-white">
-                <h1 class="text-4xl font-bold leading-tight mb-2">Selamat Datang di Adgrapusnas</h1>
+                <h1 class="text-4xl font-bold leading-tight mb-2">Selamat Datang di Adgrapusnas 2</h1>
                 <p class="text-lg opacity-90">Silakan daftar untuk membuat akun baru</p>
             </div>
 

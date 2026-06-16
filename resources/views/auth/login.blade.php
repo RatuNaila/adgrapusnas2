@@ -68,7 +68,7 @@
     <div class="content-container">
         {{-- Bagian Kiri: Teks --}}
         <div class="text-white font-extrabold text-4xl md:text-5xl leading-tight max-w-lg drop-shadow-xl">
-            <p>Selamat Datang di Adgrapusnas</p>
+            <p>Selamat Datang di Adgrapusnas 2</p>
         </div>
 
         {{-- Bagian Kanan: Form Login --}}
